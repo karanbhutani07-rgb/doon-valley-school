@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Doon Valley Secondary School</title>
+  <meta name="description" content="Contact information for Doon Valley Secondary School in Alwar.">
+
+  <!-- ✅ FIX: relative path -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <!-- ✅ FIX: relative -->
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.png" alt="Doon Valley School Logo" class="nav-logo">
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+
+      <nav class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./contact.html" class="active">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <h1>Contact Us</h1>
+    </div>
+
+    <section class="contact-container">
+      <div class="contact-details">
+        <h2>Get in Touch</h2>
+        <p style="margin-bottom: 2rem; color: #666;">
+          We welcome your inquiries and feedback. Please find our contact details below.
+        </p>
+
+        <div class="contact-item">
+          <h3>School Name</h3>
+          <p>Doon Valley Secondary School</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>Phone</h3>
+          <p>+91 - 9001735290</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p>info@doonvalleyalwar.com</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>Address</h3>
+          <p>
+            Janta Colony, Jyoti Nagar,<br>
+            Alwar, Rajasthan 301001
+          </p>
+        </div>
+      </div>
+
+      <!-- ✅ Map -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14161.46452296057!2d76.6340646!3d27.5604057!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397299f3f2604c01%3A0x283e4d6cdcb58c2c!2sDoon%20Valley%20School!5e0!3m2!1sen!2sin!4v1709280000000!5m2!1sen!2sin"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.png" alt="Doon Valley School Logo" class="footer-logo">
+      </a>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Doon Valley Secondary School</p>
+        <p>Built by Cryotonics Ltd.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ✅ FIX: relative -->
+  <script src="./assets/js/script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

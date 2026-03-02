@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Doon Valley Secondary School</title>
+  <meta name="description" content="Learn about the values and leadership of Doon Valley Secondary School.">
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.png" alt="Doon Valley School Logo" class="nav-logo">
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+
+      <nav class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html" class="active">About Us</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <h1>About Us</h1>
+    </div>
+
+    <section class="about-section">
+      <h2>Our Values</h2>
+
+      <div class="values-list">
+        <div class="value-item">
+          <h3>Holistic Development</h3>
+          <p>
+            We believe education goes beyond textbooks. Our approach focuses on the intellectual, physical, emotional, and social growth of every student.
+            Through diverse extracurricular activities, sports, and arts programs, we ensure our students develop well-rounded personalities ready to face the world.
+          </p>
+        </div>
+
+        <div class="value-item">
+          <h3>Learning with Purpose</h3>
+          <p>
+            Education should be meaningful and applicable. We design our curriculum to encourage critical thinking, problem-solving, and innovation.
+            Our educators strive to connect classroom concepts with real-world scenarios, inspiring students to become lifelong learners with a clear sense of direction.
+          </p>
+        </div>
+
+        <div class="value-item">
+          <h3>Respect, Values &amp; Responsibility</h3>
+          <p>
+            Character building is at the core of our institution. We foster an environment where mutual respect, discipline, and ethical behavior are paramount.
+            We teach our students to take responsibility for their actions and to contribute positively to their communities and society at large.
+          </p>
+        </div>
+      </div>
+
+      <div class="principal-message">
+        <div>
+          <!-- ✅ FIXED: now using your local image -->
+          <img src="./assets/images/principal.jpg" alt="Principal N.S. Bhutani" class="principal-photo">
+        </div>
+
+        <div class="message-content">
+          <h2>Principal&apos;s Message</h2>
+          <blockquote>
+            At our school, we strive to create an open and inspiring environment where every child is encouraged to learn, grow, and discover their true potential.
+            Through strong values, discipline, and quality education, we prepare our students to face the future with confidence and integrity.
+          </blockquote>
+          <p class="signature">N.S. Bhutani</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.png" alt="Doon Valley School Logo" class="footer-logo">
+      </a>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Doon Valley Secondary School</p>
+        <p>Built by Cryotonics Ltd.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
