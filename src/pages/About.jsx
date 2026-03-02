@@ -36,7 +36,7 @@ export default function About() {
 
                 <div className="principal-message">
                     <div>
-                        <img src="/assets/images/Principal.jpg" alt="Principal N.S. Bhutani" className="principal-photo" />
+                        <img src="/assets/images/Principal.webp" alt="Principal N.S. Bhutani" className="principal-photo" loading="lazy" />
                     </div>
 
                     <div className="message-content">

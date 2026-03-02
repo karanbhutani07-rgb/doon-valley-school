@@ -46,7 +46,7 @@ export default function Home() {
                         onMouseEnter={stopAuto}
                         onMouseLeave={startAuto}
                     >
-                        {['slide1.jpg', 'slide2.jpg', 'slide3.JPG', 'slide4.jpg', 'slide5.JPG'].map((fileName, idx) => (
+                        {['slide1.webp', 'slide2.webp', 'slide3.webp', 'slide4.webp', 'slide5.webp'].map((fileName, idx) => (
                             <img
                                 key={fileName}
                                 src={`/assets/images/${fileName}`}

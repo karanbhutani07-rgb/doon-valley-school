@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 export default function Gallery() {
     const images = [
-        'g01.jpg', 'g02.jpg', 'g03.jpg', 'g04.JPG', 'g05.JPG', 'g06.JPG',
-        'g07.jpg', 'g08.jpg', 'g09.jpg', 'g10.jpg', 'g11.jpg', 'g12.jpg'
+        'g01.webp', 'g02.webp', 'g03.webp', 'g04.webp', 'g05.webp', 'g06.webp',
+        'g07.webp', 'g08.webp', 'g09.webp', 'g10.webp', 'g11.webp', 'g12.webp'
     ];
 
     const [lightboxIndex, setLightboxIndex] = useState(null);
@@ -28,7 +28,7 @@ export default function Gallery() {
             <section className="gallery-grid">
                 {images.map((img, idx) => (
                     <div key={idx} className="gallery-item" onClick={() => openLightbox(idx)}>
-                        <img src={`/assets/images/${img}`} alt={`School activity ${idx + 1}`} />
+                        <img src={`/assets/images/${img}`} alt={`School activity ${idx + 1}`} loading="lazy" />
                     </div>
                 ))}
             </section>
